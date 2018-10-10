@@ -1,0 +1,14 @@
+.my-cont{
+    margin-inline-end: 30%;
+    margin-inline-start: 30%;
+}
+
+.btn{
+    background-color: orange;
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    flex-direction: row;
+    font-weight: 600;
+    margin: 4px;
+}

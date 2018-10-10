@@ -1,18 +1,20 @@
-<table class="table">
+<app-buscador></app-buscador>
+<h2>NUEVA VENTA</h2>
+<table  class="table">
     <thead>
       <tr>
-        <th scope="col">#</th>
-        <th scope="col">First</th>
-        <th scope="col">Last</th>
-        <th scope="col">Handle</th>
+        <th scope="col">ID Producto</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Cantidad</th>
+        <th scope="col">Precio</th>
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
+      <tr *ngFor="let prod of productos">
+        <td>{{prod.id_prod}}</td>
+        <td>{{prod.nombre}}</td>
+        <td><input type="number" name="cant" id="cant" min="1"></td>
+        <td>{{prod.precio}}</td>
       </tr>
      
     </tbody>
